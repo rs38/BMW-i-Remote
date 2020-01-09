@@ -27,6 +27,7 @@ namespace BMW.Core
                 string key = "key"; //you need to replace it with actual values
                 string secret = "secret";//you need to replace it with actual values
                 string basic = ($"{key}:{secret}").ToBase64String();
+                // hint: basic =  "blF2NkNxdHhKdVhXUDc0eGYzQ0p3VUVQOjF6REh4NnVuNGNEanliTEVOTjNreWZ1bVgya0VZaWdXUGNRcGR2RFJwSUJrN3JPSg==";
 
                 var WS_Data = new NameValueCollection
                 {
