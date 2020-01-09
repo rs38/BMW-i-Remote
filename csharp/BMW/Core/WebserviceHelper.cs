@@ -42,7 +42,7 @@ namespace BMW.Core
 
                 try
                 {
-                    response = myWebClient.UploadString($"{APIServer}/gcdm/oauth/token/", WS_Data.ToQueryString(isEscaped: true));
+                    response = myWebClient.UploadString($"{APIServer}/gcdm/oauth/token", WS_Data.ToQueryString(isEscaped: false));
                 }
                 catch (System.Exception ex)
                 {
